@@ -10,6 +10,10 @@
         margin: 20px;
         background-image: url("https://images.unsplash.com/photo-1729575846511-f499d2e17d79?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8");
       }
+      .container:hover {
+        transition: 1s;
+        transform: scale(1.03);
+      }
       .container {
         width: 300px;
         padding: 20px;
@@ -38,8 +42,9 @@
         border: none;
         border-radius: 4px;
         cursor: pointer;
+        box-shadow: 0 4px #388e3c;
       }
-      input[type="submit"]:hover {
+      input[type="submit"] :hover {
         background-color: #45a049;
       }
       .forgot {
@@ -63,6 +68,18 @@
         color: blue;
         cursor: pointer;
       }
+      .aplikasi {
+        text-align: center;
+        /* margin-top: 0px; */
+        font-size: 12px;
+      }
+      /* input[type="submit"] {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 12px;
+        color: blue;
+        cursor: pointer;
+      } */
     </style>
   </head>
   <body>
@@ -70,12 +87,22 @@
       <h1>Login</h1>
       <form action="">
         <label for="username">Username:</label
-        ><input type="text" id="username" name="username" /><br /><br />
+        ><input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="masukkan user" /><br /><br />
         <div class="forgot">Forgot Password?</div>
         <label for="password">Password:</label
-        ><input type="password" id="password" name="password" /><br /><br />
+        ><input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="masukkan password" /><br /><br />
         <input type="submit" value="Login" />
-        <div class="pasword">Dont have an account? <b>Signup</b></div>
+        <div class="pasword">Don't have an account? <b>Signup</b></div>
+        <div class="aplikasi">or sign up with</div>
+        <!-- <input class="sumber" type="sumbit" />Google Facebook Twitter/><br /><br /> -->
       </form>
     </div>
   </body>
