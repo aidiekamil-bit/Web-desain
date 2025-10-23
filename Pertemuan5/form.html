@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        border-radius: 5px;
+        padding: 20px;
+        background-color: #f2f2f2;
+      }
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        font-family: Arial, sans-serif;
+        background-color: #04aa6d;
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Contact Form</h3>
+      <form action="">
+        <label for="nama_lengkap">Nama Lengkap</label
+        ><input
+          type="text"
+          id="nama_lengkap"
+          placeholder="Isikan Nama Lengkap Anda ...." /><label for="negara"
+          >Negara</label
+        ><select id="negara" name="negara">
+          <option value="indonesia">Indonesia</option>
+          <option value="malaysia">Malaysia</option>
+          <option value="singapura">Singapura</option>
+          <option value="thailand">Thailand</option>
+        </select>
+
+        <input type="radio" id="bogor" name="kota" value="bogor" /><label
+          for="bogor"
+          >Bogor</label
+        ><br /><input
+          type="radio"
+          id="jakarta"
+          name="kota"
+          value="jakarta" /><label for="jakarta">Jakarta</label><br /><input
+          type="radio"
+          id="bandung"
+          name="kota"
+          value="bandung" /><label for="bandung">Bandung</label><br />
+        <input type="checkbox" name="sd" value="sekolah" /><label for="sd"
+          >SD</label
+        ><br />
+        <input type="checkbox" name="smp" value="sekolah" /><label for="smp"
+          >SMP</label
+        ><br />
+        <input type="checkbox" name="sma" value="sekolah" /><label for="sma"
+          >SMA</label
+        ><br />
+
+        <label for="subject">Subject</label
+        ><textarea
+          id="subject"
+          name="subject"
+          placeholder="Tulis sesuatu...."
+          style="height: 200px"></textarea
+        ><input type="submit" value="Kirim" />
+      </form>
+    </div>
+  </body>
+</html>
