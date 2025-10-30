@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh variabel</title>
+    <style>
+      :root {
+        --warnaPrimary: green;
+        --warnaSekuder: red;
+        --warnaTeks: black;
+        --padding: 10px;
+        --radius: 10px;
+        --warna-hover: rgb(111, 158, 111);
+        --sizeIsi: 15pt;
+      }
+      body {
+        font-family: arial;
+        background-color: var(--warnaPrimary);
+        color: var(--warnaTeks);
+        padding: var(--padding);
+      }
+      button {
+        background-color: var(--warnaSekuder);
+        color: var(--warnaTeks);
+        padding: var(--padding);
+        cursor: pointer;
+        border-radius: var(--radius);
+      }
+      button:hover {
+        background-color: var(--warna-hover);
+      }
+      p {
+        font-size: var(--sizeIsi);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Belajar variabel</h1>
+    <button>klik saya</button>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat numquam
+      laboriosam deserunt obcaecati recusandae aliquid perferendis explicabo at
+      ex veritatis? Iste a reiciendis necessitatibus illum assumenda quidem,
+      obcaecati repudiandae totam.
+    </p>
+  </body>
+</html>

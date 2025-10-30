@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .jurusan{
+            display: flex;
+            /* flex-direction: column; */
+        }
+        #div1  {
+            background-color: yellow;
+            padding: 20px;
+        }
+        #div2  {
+            background-color: yellow;
+            padding: 20px;
+        }#div3  {
+            background-color: yellow;
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+            
+        }
+
+        /* Hide element if the viewport width is 600px or less */
+        @media screen and (max-width: 600px) {
+            #div1 {
+                
+                background-color:blue;
+                
+                margin: 5px;
+            }
+            #div2 {
+                
+                background-color: blue;
+                
+                margin: 5px;
+            }#div3 {
+                
+                background-color: blue;
+                
+                margin: 5px;
+            }
+            .jurusan{
+            flex-direction: column;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Jurusan SMK</h1>
+<div class="jurusan">
+    <div id="div1"><h1>DKV</h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A incidunt natus, maiores sunt, labore ullam et ipsa doloremque nemo minima possimus suscipit aut odit perferendis? Deleniti labore eveniet facere autem!</div>
+    <div id="div2"><h1>RPL</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam error voluptatum libero qui, dignissimos omnis consequatur nesciunt fugiat obcaecati quis, dolore sunt temporibus deserunt. Quia, nihil facere! Natus, voluptate laborum.</div>
+    <div id="div3"><h1>TKJ</h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nesciunt veniam odit sed dolores officia facere. Animi mollitia et autem error fuga magnam veritatis, adipisci impedit beatae magni earum itaque.</div>
+</div>
+</body>
+
+</html>

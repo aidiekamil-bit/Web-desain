@@ -85,14 +85,14 @@ h2 {
   width: 900px;
   height: auto;
 }
-.gambar {
+.picture {
   display: flex;
   gap: 20px;
   text-decoration: none;
 }
-.gambar .besar img {
+.picture .besar {
   height: auto;
-  width: 900px;
+  width: 200px;
 }
 
 .classtext .my a {
@@ -100,8 +100,8 @@ h2 {
   gap: 20px;
   font-size: 20px;
 }
-.gambar .kecil {
-  font-size: 20px;
+.picture .kecil {
+  font-size: 5px;
   text-decoration: none;
   color: #0c048c;
 }
@@ -217,8 +217,8 @@ li {
   align-items: flex-start;
 } */
 iframe {
-   /* display: flex;
-  justify-content: center; */ */
+  /* display: flex;
+  justify-content: center; */
   align-items: center;
   border-radius: 10px;
   width: 80px;
